@@ -1,0 +1,200 @@
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    min-height: 650px;
+}
+
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: mediumpurple;
+}
+
+h2, h3 {
+    text-align: center;
+    color: #4a4a4a;
+    margin-bottom: 20px;
+}
+
+
+.section {
+    margin-bottom: 40px;
+    padding: 20px;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+}
+
+
+.alert {
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.alert-success {
+    background-color: #dff0d8;
+    color: #3c763d;
+}
+
+.alert-danger {
+    background-color: #f2dede;
+    color: #a94442;
+}
+
+
+.animals {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+
+.animal {
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 45%; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.animal:hover {
+    transform: scale(1.05);
+}
+
+
+.details {
+    padding: 15px;
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.title h3 {
+    margin: 0;
+    font-size: 1.5em;
+    color: #4a4a4a;
+}
+
+.details p {
+    margin: 5px 0;
+    color: #6a6a6a;
+}
+
+
+.description {
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-top: 1px solid #e0e0e0;
+    text-align: justify;
+}
+
+
+.image {
+    text-align: center;
+    padding: 15px;
+    border-top: 1px solid #e0e0e0;
+}
+
+.image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+
+.actions {
+    text-align: center;
+    padding: 15px;
+    border-top: 1px solid #e0e0e0;
+}
+
+.actions form {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.actions button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.actions .btn-primary {
+    background-color: #6a1b9a;
+}
+
+.actions .btn-danger {
+    background-color: #e53935;
+}
+
+.actions .btn-primary:hover {
+    background-color: #8e24aa;
+}
+
+.actions .btn-danger:hover {
+    background-color: #ef5350;
+}
+
+
+
+
+@media (max-width: 1200px) {
+    .container {
+        max-width: 960px;
+    }
+    .animal {
+        width: 48%; 
+    }
+}
+
+
+@media (max-width: 992px) {
+    .container {
+        max-width: 720px;
+    }
+    .animal {
+        width: 100%; 
+    }
+}
+
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 540px;
+        padding: 10px;
+    }
+    .animal {
+        width: 100%; 
+    }
+}
+
+
+@media (max-width: 576px) {
+    .container {
+        max-width: 100%;
+        padding: 5px;
+    }
+    .animal {
+        width: 100%; 
+    }
+    .actions button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
